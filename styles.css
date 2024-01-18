@@ -1,0 +1,121 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #ffffff; /* Light text color */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('catskateboard.gif'); /* Replace 'catskateboard.gif' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+header {
+    background-color: #ff6ac1; /* Pink header background color */
+    color: #1f1f1f; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.featured-games {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.game {
+    border: 2px solid #00d9ff; /* Cyan border color */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #333; /* Dark card background color */
+    box-shadow: 0 0 10px rgba(255, 106, 193, 0.5); /* Pink box shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.game h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ff6ac1; /* Pink heading color */
+}
+
+.game p {
+    color: #00d9ff; /* Cyan text color */
+}
+
+.game a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #ff6ac1; /* Pink button background color */
+    color: #1f1f1f; /* Dark button text color */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.game a:hover {
+    background-color: #00d9ff; /* Cyan hover color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer background color */
+    color: #ffffff; /* Light footer text color */
+}
+
+footer p {
+    margin: 0;
+}
